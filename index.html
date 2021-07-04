@@ -29,7 +29,7 @@ a {text-decoration:none}
 .related-post.style-5 .item-title{line-height:1.3em;font-family:'DM Serif Text', serif;margin-bottom:7px;position:relative;z-index:2;color:#09204C;}
 .related-post.style-5 .item-title a{display:block;color:#09204C;}
 .related-post.style-5 .item-related{display:block;position:relative;padding-bottom:45px;border-radius:10px;background:#fff;box-shadow:0 6px 18px 0 rgba(9,32,76,.075);overflow:hidden;height:100%;}
-.related-post.style-5 .item-thumbnail{min-height:80px;text-align:center;font-size:11px;background-color:#ebeced;position:relative;}
+.related-post.style-5 .item-thumbnail{display:none;min-height:80px;text-align:center;font-size:11px;background-color:#ebeced;position:relative;}
 .related-post.style-5 .item-thumbnail img{position:relative;display:block;text-align:center;}
 .related-post.style-5 .item-thumbnail img{margin:0 auto;}
 .related-post.style-5 .item-title{position:static;margin-bottom:0;padding:10px 15px 0;}
@@ -73,7 +73,7 @@ function getQueryVariable(variable) {
 var labelArray = [],
     relatedPostConfig = {
 		homePage: getQueryVariable("url"),
-        numPosts: 4,
+        numPosts: 10,
         summaryLength: 20,
         widgetStyle: 5,
         callBack: function() {
